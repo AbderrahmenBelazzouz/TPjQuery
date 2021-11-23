@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="TPJQuery.css">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <p class="head"></p>
+  </header>
+  <br><br> <br><br>
+  <div class="text-center">
+    <div class="box ">
+
+      <p>Block </p>
+
+    </div>
+  </div>
+  <br><br> <br><br>
+  <footer>
+    <p class="footer">Footer</p>
+  </footer>
+  <script>
+    $('.box').on('mouseover', e => {
+      $('.box p').text('Attention vous etes dans la zone rouge !').css({ "color": "red", "font-size": "30px" })
+    })
+    $('.box').on('mouseout', e => {
+      $('.box p').text('Block Rouge click here').css({ "color": "black", "font-size": "15px" })
+    })
+    $('.box ').on('mousedown mouseup', e => {
+      $('.head ').text('UP')
+    })
+
+
+    $('.box ').on('mousedown', e => {
+      $('.box ').css('border-color', 'green');
+    })
+
+    $('.box ').on('mouseup', e => {
+      $('.box ').css('border-color', 'red');
+    })
+
+    $('.box ').on('mouseup', e => {
+      $('.footer ').text('Down')
+    })
+    $('.head').on('click', e => {
+      $('.head ').text('Header')
+    })
+    $('.footer').on('mouseup', e => {
+      $('.footer ').text('Footer')
+    })
+  </script>
+</body>
+
+</html>
