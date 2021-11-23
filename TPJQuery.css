@@ -1,0 +1,16 @@
+header{
+  border: 6px solid;
+  height: 40px;
+
+}
+.box{
+  border: 6px solid red;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer{
+  border: 6px solid;
+  height: 40px;
+}
